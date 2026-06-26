@@ -6,25 +6,33 @@ Total Products: 7
 
 ## Revenue
 
-Total revenue generated:
-₹____ 1264761.96
+- Total revenue generated: $ 1264761.96
 
-AOV:  $ 1053.96
+- AOV:  $ 1053.96
 
-Top product geerating revenue:
+### Business Meaning:
+This represents overall sales performance.
+
+
+## Product Performance
+
+- Top product geerating revenue:
 ____  Chair: $ 195620.11
       Printer: $ 195612.60
 
-
-Least Selling product: 
+- Least Selling product: 
    Phone: $ 151722.39
 
-Highest quantity product : 
-  Printer - 181
-  Tablet - 179
+- Highest quantity product : 
+  Chair - 562
+  Printer - 542
 
-Least Quantity product:
-  Phone - 156
+- Least Quantity product:
+  Phone - 411
+
+### Business Meaning:
+Maintain inventory availability for high performing products.
+
 
 ## Category Revenue
 
@@ -43,8 +51,8 @@ Top 10 customer:
 ____ C38840- $ 5723.23
     10th- C25276 - $ 3313.9
 
-Multiple orders :
-  5 - 217 cutomers
+Multiple orders by:
+  11 customers
 
 
 ## Operations
@@ -73,10 +81,10 @@ Most preffered payment method- 'Online'
 
 Least preffered payment method- 'Gift Card'
 
-    "Online"	    258
+    "Online"	      258
     "Cash"	        246
-    "Credit Card"	234
-    "Debit Card"	232
+    "Credit Card"	  234
+    "Debit Card"	  232
     "Gift Card"	    230
 
 Which payment generates highest revenue? 
@@ -92,10 +100,19 @@ Best referral source:   "Instagram"
 
 ## Time Trend Analysis:
 
-Yearly : 
+Yearly Sales: 
  2023 - $ 552643.24
  2024 - $ 480235.87
  2025 - $ 231882.85
 
 Monthly revenue trend: 
    
+
+## Product Revenue contribution %
+     "Printer"	195612.61	   15.47
+     "Chair"	  195620.11	   15.47
+     "Laptop"	  192126.56	   15.19
+     "Tablet"	  186568.95	   14.75
+     "Monitor"	175651.41	   13.89
+     "Desk"	    167459.93	   13.24
+     "Phone"	  151722.39	   12.00

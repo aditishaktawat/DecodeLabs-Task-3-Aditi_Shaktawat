@@ -38,14 +38,17 @@ Q16. Which payment generates highest revenue?
 # Section 8: Marketing Analysis
 
 Q17. Which referral source brings most customers?
+Q18.  Which referral generates maximum revenue?
 
 # Section 9: Time Analysis
 
-Q18. Monthly revenue trend
-Q19. Yearly revenue trend
+Q19. Monthly revenue trend
+Q20. Month On Month Growth Rate
+Q21. 7 Day Rolling Average
+Q22. Yearly revenue trend
 
 # Section 10: Advanced Analyst Questions
 
-Q20. Top 2 products per category
-Q21. Product Revenue contribution %
-Q22. VIP customers
+Q23. Top 2 products per category
+Q24. Product Revenue contribution %
+Q25. VIP customers
