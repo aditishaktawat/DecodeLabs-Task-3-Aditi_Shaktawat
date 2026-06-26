@@ -1,0 +1,6 @@
+"orderstatus","total_orders","order_percentage","revenue","order_category"
+"Cancelled",250,21,276396.21,"Lost"
+"Returned",247,21,243277.70,"Lost"
+"Pending",237,20,256328.15,"In Progress"
+"Shipped",235,20,246159.58,"In Progress"
+"Delivered",231,19,242600.32,"Successful"

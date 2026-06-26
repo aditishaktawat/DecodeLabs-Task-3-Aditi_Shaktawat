@@ -1,0 +1,8 @@
+"product","product_category","units_sold","revenue","revenue_contribution_percentage","category_rank"
+"Chair","Furniture",562,195620.11,15.47,1
+"Printer","Electronics",542,195612.61,15.47,1
+"Laptop","Electronics",535,192126.56,15.19,2
+"Tablet","Electronics",497,186568.95,14.75,3
+"Monitor","Electronics",480,175651.41,13.89,4
+"Desk","Furniture",508,167459.93,13.24,2
+"Phone","Electronics",411,151722.39,12.00,5
