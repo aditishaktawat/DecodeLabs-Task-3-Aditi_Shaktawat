@@ -1,40 +1,57 @@
-# SQL Analysis Findings
+# E-Commerce SQL Analysis Insights
 
-Total orders:  1200
+## 1. Business Overview
 
-Total Products: 7
+- Total Orders: 1200
+- Total Products: 7
+- Total Revenue: $1.26M
+- Average Order Value: $1053.96
 
-## Revenue
+
+### Business Interpretation
+
+The dataset represents a healthy e-commerce transaction system with high-value average orders.
+
+# 2. Revenue Analysis
+
+## Key Findings
 
 - Total revenue generated: $ 1264761.96
-
 - AOV:  $ 1053.96
 
-### Business Meaning:
-This represents overall sales performance.
+## Business Action
+
+Focus on increasing repeat purchases and improving customer lifetime value.
 
 
-## Product Performance
+## 3. Product Performance
 
-- Top product geerating revenue:
-____  Chair: $ 195620.11
-      Printer: $ 195612.60
+## Key Findings
 
-- Least Selling product: 
-   Phone: $ 151722.39
+Highest Revenue Products:
 
-- Highest quantity product : 
-  Chair - 562
-  Printer - 542
-
-- Least Quantity product:
-  Phone - 411
-
-### Business Meaning:
-Maintain inventory availability for high performing products.
+1. Chair - $195,620
+2. Printer - $195,612
 
 
-## Category Revenue
+Highest Quantity Sold:
+
+1. Chair - 562 units
+2. Printer - 542 units
+
+
+Lowest Performing:
+
+Phone generated lowest revenue:
+$151,722
+
+
+## Business Action
+
+Inventory and marketing efforts should prioritize high-performing products and maintain inventory availability for high performing products..
+
+
+# 4. Category Revenue
 
      Electronics - $ 901681.91
      Furniture - $ 363080.04
@@ -43,39 +60,58 @@ Qunatity sold:
     Electronics - 852
     Furniture - 348
 
-## Customers
 
-Unique Customers: 1189
+## Insight
 
-Top 10 customer:
-____ C38840- $ 5723.23
-    10th- C25276 - $ 3313.9
+Electronics dominates revenue contribution and should receive higher strategic focus.
 
-Multiple orders by:
-  11 customers
+# 5. Customer Analysis 
+
+- Unique Customers: 1189
+- Repeat Customers: 11
+
+## Insight
+
+Large customer base but low repeat purchase behavior.
+
+Potential opportunity: Improve retention strategies.
 
 
-## Operations
+# 6. Operations Analysis
 
 Order status distribution: 
 
        "Cancelled"	250
-       "Returned"	247
-       "Pending"	237
-       "Shipped"	235
+       "Returned"	  247
+       "Pending"	  237
+       "Shipped"	  235
        "Delivered"	231
 
 Delivery rate:   19.25%
-____
 
-## Discounts:
+## Insight
 
-Orders who used discounts - 891
+Low delivery success indicates possible operational issues.
 
-Dicounted AOV = 1057.64
-No discount AOV = 1043.37
+Investigate:
+- Shipping delays
+- Cancellation reasons
+- Return causes
 
-## Payment Analysis:
+
+# 7. Discount Analysis
+
+- Orders who used discounts - 891
+
+- Dicounted AOV = $ 1057.64
+- No discount AOV = $ 1043.37
+
+## Insight
+
+Discounts slightly increased order value, suggesting promotions influence customer spending.
+
+
+# 8. Payment Analysis
 
 Most preffered payment method- 'Online'
 
@@ -93,22 +129,20 @@ Which payment generates highest revenue?
 Which payment generates least revenue?
   "Debit Card" " $ 232361.18
 
+## Insight
 
-## Marketing
+Online payment channels dominate customer preference.
+
+
+# 9. Marketing Analysis
 
 Best referral source:   "Instagram"
 
-## Time Trend Analysis:
+## Insight
 
-Yearly Sales: 
- 2023 - $ 552643.24
- 2024 - $ 480235.87
- 2025 - $ 231882.85
+Instagram brings the strongest customer acquisition.
 
-Monthly revenue trend: 
-   
-
-## Product Revenue contribution %
+# 11. Product Revenue contribution %
      "Printer"	195612.61	   15.47
      "Chair"	  195620.11	   15.47
      "Laptop"	  192126.56	   15.19
@@ -116,3 +150,132 @@ Monthly revenue trend:
      "Monitor"	175651.41	   13.89
      "Desk"	    167459.93	   13.24
      "Phone"	  151722.39	   12.00
+
+## Insight
+
+Revenue is evenly distributed across products, reducing dependency on a single product.
+
+
+# 11. Time Trend Analysis:
+
+## Monthly Revenue Trend (Q19)
+
+### Key Findings
+
+- The highest revenue month was **June 2024** with revenue of **$68,068.54**.
+
+- The lowest revenue month was **April 2023** with revenue of **$27,751.71**.
+
+
+### Business Interpretation
+
+Monthly revenue analysis shows fluctuations in customer demand over time.
+
+The peak in June 2024 indicates a period of strong customer activity, which could be linked to:
+- successful marketing campaigns
+- increased customer acquisition
+- seasonal demand patterns
+
+The low revenue periods highlight months where business performance weakened and require further investigation.
+
+
+### Business Action
+
+The company can use monthly trends to:
+- plan inventory requirements
+- schedule promotional campaigns during low-demand periods
+- identify seasonal buying patterns
+
+---
+
+
+## Month-over-Month Revenue Growth Analysis (Q20)
+
+### Key Findings
+
+- Highest MoM growth occurred in **June 2024** with a growth rate of **143.89%** compared to the previous month.
+
+- The largest revenue decline occurred in **September 2023** with a decline of **45.68%**.
+
+
+### Business Interpretation
+
+MoM growth helps measure the speed at which revenue is increasing or decreasing.
+
+A strong positive growth month indicates increased demand and successful business activities.
+
+A sharp decline may indicate:
+
+- reduced customer engagement
+- lower product demand
+- ineffective promotions
+- operational issues
+
+
+### Business Action
+
+Growth spikes should be investigated to identify successful strategies that can be repeated.
+
+Declining months should be analyzed using:
+
+- customer retention metrics
+- product performance
+- marketing channel performance
+
+---
+
+## 7-Day Rolling Revenue Average (Q21)
+
+### Key Findings
+
+- A 7-day rolling average was calculated to smooth daily revenue fluctuations.
+- The rolling revenue average ranged approximately between:
+  - Lowest: **$1,148.42**
+  - Highest: **$2,515.04**
+
+
+### Business Interpretation
+
+Daily revenue can be highly volatile.
+
+The rolling average helps identify the underlying business trend by reducing short-term noise.
+
+This allows the business to differentiate between:
+- temporary revenue spikes
+- consistent growth patterns
+
+
+### Business Action
+
+Rolling trends can support:
+
+- short-term revenue forecasting
+- inventory planning
+- operational resource allocation
+
+---
+
+## Yearly Revenue Trend (Q22)
+ 2023 - $ 552643.24
+ 2024 - $ 480235.87
+ 2025 - $ 231882.85
+
+### Business Interpretation
+
+The analysis shows a decline in yearly revenue over time.
+
+Revenue decreased:
+- 2024 vs 2023 → approximately **13% decline**
+- 2025 vs 2024 → approximately **52% decline**
+
+### Business Action
+
+The decline suggests the need to investigate:
+- customer retention
+- repeat purchase behavior
+- product demand changes
+- marketing effectiveness
+
+Additional analysis should focus on identifying the reason behind declining revenue and strategies to recover growth.
+   
+
