@@ -132,17 +132,44 @@ FROM orders
 GROUP BY couponcode
 order by avg_order_value desc;
 
+--Q15. Which 3 products have the highest % of purchases with discounts applied?
+SELECT
+    product,
+    COUNT(orderid) AS total_orders,
+    SUM(
+        CASE 
+            WHEN couponcode <> 'None' THEN 1
+            ELSE 0
+        END) AS discounted_orders,
+    ROUND(
+        100.0 *
+        SUM(CASE 
+                WHEN couponcode <> 'None' THEN 1 ELSE 0
+            END) / COUNT(orderid),2
+    ) AS discount_percentage
+FROM orders
+GROUP BY product HAVING COUNT(orderid) > 20
+ORDER BY discount_percentage DESC;
+
+-- Q16. Which couponcode generate highest revenue?
+Select couponcode, 
+	COUNT(orderid) AS total_orders,
+	round(Sum(totalprice::numeric),2) as total_revenue,
+	round(AVG(totalprice::numeric),2) AS avg_order_value
+From orders
+group by couponcode
+order by total_revenue desc;
 
 -- # Section 7: Payment Analysis
 
--- Q15. Which payment method is most popular?
+-- Q17. Which payment method is most popular?
 
 Select paymentmethod, count(orderid) as order_count
 from orders
 group by paymentmethod
 order by order_count desc;
 
--- Q16. Which payment generates highest revenue?
+-- Q18. Which payment generates highest revenue?
 
 Select paymentmethod, round(sum(totalprice::numeric),2) as revenue
 from orders
@@ -151,14 +178,14 @@ order by revenue desc;
 
 -- # Section 8: Marketing Analysis
 
--- Q17. Which referral source brings most customers?
+-- Q19. Which referral source brings most customers?
 
 Select referralsource, count(customerid) as cust_count
 from orders
 group by referralsource
 order by cust_count desc;
 
--- Q18.  Which referral generates maximum revenue?
+-- Q20.  Which referral generates maximum revenue?
 
 Select referralsource, round(sum(totalprice::numeric),2) as revenue
 from orders
@@ -168,7 +195,7 @@ order by revenue desc;
 
 -- # Section 9: Time Analysis
 
--- Q19. Monthly revenue trend
+-- Q21. Monthly revenue trend
 
 SELECT 
   DATE_TRUNC('month', date) AS order_month, 
@@ -177,7 +204,7 @@ FROM orders
 GROUP BY DATE_TRUNC('month', date)
 ORDER BY order_month ASC;
 
--- Q20. Month On Month Growth Rate
+-- Q22. Month On Month Growth Rate
 
 WITH monthly_growth AS (
   SELECT 
@@ -196,7 +223,7 @@ SELECT
 FROM monthly_growth
 ORDER BY month ASC;
 
--- Q21. 7 Day Rolling Average
+-- Q23. 7 Day Rolling Average
 
 WITH daily_revenue AS (
   -- Step 1: Calculate total revenue per day
@@ -219,7 +246,7 @@ FROM daily_revenue
 ORDER BY order_day ASC;
 
 
--- Q22. Yearly revenue trend
+-- Q24. Yearly revenue trend
 
 Select order_year, round(sum(totalprice::numeric),2)
 from orders
@@ -228,7 +255,7 @@ ORDER BY order_year;
 
 # Section 10: Advanced Analyst Questions
 
--- Q23. Top 2 products per category
+-- Q25. Top 2 products per category
 
 WITH prod_rank as (
 Select product,
@@ -248,7 +275,7 @@ Select product,
 from prod_rank
 where rnk < 3;
 
--- Q24. Product Revenue contribution %
+-- Q26. Product Revenue contribution %
 
 WITH contribution AS (
   SELECT 
@@ -266,7 +293,7 @@ FROM contribution
 ORDER BY revenue_perct DESC;
 
 
--- Q25. VIP customers
+-- Q27. VIP customers
 
 WITH customer_spend AS (
   -- Step 1: Calculate total lifetime value (LTV) per customer
@@ -399,6 +426,7 @@ ORDER BY total_orders DESC;
 
 -- ======================================
 -- Discount Analysis Export
+-- Discount usage and AOV comparison
 -- ======================================
 
 SELECT

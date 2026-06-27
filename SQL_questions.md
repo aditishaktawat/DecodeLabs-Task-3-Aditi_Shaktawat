@@ -29,26 +29,28 @@ Q12. Which status loses most orders?
 
 Q13. How many orders used discounts?
 Q14. Do discounts increase AOV?
+Q15. Top 3 products with highest % of purchases with discount applied
+Q16. Which coupon codes generate highest revenue?
 
 # Section 7: Payment Analysis
 
-Q15. Which payment method is most popular?
-Q16. Which payment generates highest revenue?
+Q17. Which payment method is most popular?
+Q18. Which payment generates highest revenue?
 
 # Section 8: Marketing Analysis
 
-Q17. Which referral source brings most customers?
-Q18.  Which referral generates maximum revenue?
+Q19. Which referral source brings most customers?
+Q20.  Which referral generates maximum revenue?
 
 # Section 9: Time Analysis
 
-Q19. Monthly revenue trend
-Q20. Month On Month Growth Rate
-Q21. 7 Day Rolling Average
-Q22. Yearly revenue trend
+Q21. Monthly revenue trend
+Q22. Month On Month Growth Rate
+Q23. 7 Day Rolling Average
+Q24. Yearly revenue trend
 
 # Section 10: Advanced Analyst Questions
 
-Q23. Top 2 products per category
-Q24. Product Revenue contribution %
-Q25. VIP customers
+Q25. Top 2 products per category
+Q26. Product Revenue contribution %
+Q27. VIP customers

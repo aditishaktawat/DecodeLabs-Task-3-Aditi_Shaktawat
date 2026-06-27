@@ -265,8 +265,39 @@ Some acquisition channels generate stronger customer engagement.
 Marketing investment should prioritize channels that produce higher business value.
 
 ---
+# 7. Discount & Promotion Analysis
 
-# 7. Time Trend Analysis
+Key analysis performed:
+
+- Discount adoption analysis
+- Discount vs non-discount Average Order Value comparison
+- Product-level discount dependency
+- Coupon revenue contribution
+
+### Key Finding
+
+Discounted orders generated a slightly higher Average Order Value:
+
+- Discount orders AOV: **$1057.64**
+- Non-discount orders AOV: **$1043.37**
+
+-- Printer - **76.8%** discounted purchases
+-- Desk - **75.8%** discounted purchases
+
+This indicates promotions may encourage higher spending, but discount strategies should be monitored to avoid dependency and protect profitability.
+
+
+### Business Impact
+
+The analysis helps identify:
+
+- effective promotional campaigns
+- products dependent on discounts
+- opportunities for pricing optimization
+
+---
+
+# 8. Time Trend Analysis
 
 
 ### Analysis Performed

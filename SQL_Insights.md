@@ -101,15 +101,67 @@ Investigate:
 
 # 7. Discount Analysis
 
-- Orders who used discounts - 891
+- Orders who used discounts - **891**
 
-- Dicounted AOV = $ 1057.64
-- No discount AOV = $ 1043.37
+- Dicounted AOV = **$ 1057.64**
+- No discount AOV = **$ 1043.37**
+
+Discounted orders generated approximately **$14.27 higher average order value (~1.37% increase)** compared to non-discounted orders.
 
 ## Insight
 
-Discounts slightly increased order value, suggesting promotions influence customer spending.
+Discounts appear to slightly increase customer spending behaviour.
 
+However, the impact is relatively small, indicating that discounts should be evaluated carefully to ensure they improve revenue quality and not only increase transaction volume.
+
+---
+## Product Discount Dependency Analysis
+
+### Findings
+
+Products were ranked based on the percentage of purchases made using discounts.
+
+Top products with higher discount dependency:
+
+1. Printer - **76.8%** discounted purchases
+2. Desk - **75.8%** discounted purchases
+3. Phone - **75%** discounted purchases
+
+
+## Business Insight
+
+Products with high discount dependency may indicate:
+
+- price sensitivity among customers
+- customers waiting for promotional offers
+- need for pricing or positioning review
+---
+
+## Coupon Performance Analysis
+
+### Findings
+
+Coupons were analyzed based on:
+- number of orders generated
+- revenue contribution
+- average order value
+
+Top revenue-generating coupons:
+
+1. FREESHIP - $ 335037 revenue
+2. SAVE10 - $ 30480 revenue
+
+## Business Insight
+
+Not all coupons create the same business value.
+
+High-performing coupons can be prioritized for future marketing campaigns, while low-performing coupons should be reviewed.
+
+---
+
+## Overall Discount Analysis Conclusion
+
+Discounts are contributing positively to purchase behaviour, but the business should balance promotional activity with profitability and customer retention goals.
 
 # 8. Payment Analysis
 
